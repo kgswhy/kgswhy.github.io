@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Format teks</title>
+    <style>
+        :root{
+            --primary: #00FFFF;
+            --light: #E0FFFF;
+            --old: #1D1CE5;
+            --dark: #222;
+            --white: #fff;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--dark);
+            background-size: auto;
+
+        }
+.header{
+    text-align: center;
+    position: absolute;
+    left: -100px;
+    transform: translate(65%,0%);
+}
+
+.header a{
+    text-decoration: none;
+}
+
+.header a h1:hover{
+    color: var(--primary);
+    transition: all .3s ease-in-out;
+}
+
+.header h1{
+    color: var(--white);
+    text-align: left;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size: 50px;
+}
+
+.header h1 span{
+    color: var(--primary);
+}
+
+.konten{
+    position: absolute;
+    transform: translate(-65%,20%);
+    text-align: center;
+    left: 60%;
+}
+
+.konten p{
+    color: var(--white);
+    font-family: 'Raleway',sans-serif;
+    text-align: left;
+}
+
+.konten p a{
+    text-decoration: none;
+}
+
+.konten p a span:hover{
+    color: var(--primary);
+}
+
+.konten span{
+    color: var(--light);
+    font-size: 10px;
+}
+
+.wrap span{ 
+    font-size: large;
+}
+
+@media only screen and (max-width: 1000px){
+    #templateColumns{
+        width:100% !important;
+    }
+
+    .templateColumnContainer{
+        display:flex !important;
+        width:100% !important;
+      }
+    .leftColumnContent{
+        font-size:16px !important;
+        line-height:125% !important;
+    }
+
+    .rightColumnContent{
+        font-size:16px !important;
+        line-height:125% !important;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="./index.html"><h1>Format<span>Teks</span></h1></a>
+      </div>
+      <div class="konten">
+        <p>
+          Nah pada kali ini saya akan memberikan penjelasan tentang Format teks yang bersumber pada blog dibawah ini. <br><a href="#"><span
+            >http://arya-muhamad.blogspot.com/</span></a>
+          <br>
+        </p>
+        <div class="wrap">
+            <p>
+                <span class="F">Format Teks</span> Dalam HTML digunakan untuk membuat teks yang ada dalam dokumen html menjadi kelihatan berbeda,menarik dan memiliki arti serta dapat memberikan kemudahan dalam menuliskan teks yang berupa rumus-rumus atau lambang dari suatu disiplin ilmu.
+            </p>
+        </div>
+        <table border="1" cellpadding="10" cellspacing="10" width="100%" id="templateColumns">
+            <tr>
+                <td align="center" valign="top" width="100%" class="templateColumnContainer">
+                    <table border="0" cellpadding="1" cellspacing="150" width="100%">
+                        <tr>
+                            <center>
+                            <p>Cetak tebal atau Bold <br>
+                               Cetak tebal digunakan untuk menebalkan teks agar berbeda dengan teks lainnya. Penulisannya adalah B.
+                                </p>
+                            </center>
+                        </tr>
+                        <tr>
+                            <p>contoh:<b>...Teks...</b></p>
+                        </tr>
+                        <hr>
+                    </table>
+                    <table border="0" cellpadding="1" cellspacing="" width="100%">
+                        <tr>
+                            <p>Memberi Garis Bawah <br> atau Underline
+                                Underline digunakan untuk menggarisbawahi suatu teks agar berbeda penekananya atau untuk menegaskan maksud dari teks tersebut. Penulisannya adalah u.
+                                </p>
+                        </tr>
+                        <tr>
+                            <p>contoh:<u>...Teks...</u></p>
+                        </tr>
+                        
+                    </table>
+                </td>
+                <td align="cente valign="top" width="100%" class="templateColumnContainer">
+                    <table border="0" cellpadding="100" cellspacing="0" width="100%">
+                        <tr>
+                            <p>Cetak Miring atau Italic <br>
+                                Cetak tebal digunakan untuk menmiringkan teks agar berbeda dengan teks lainnya. Penulisannya adalah i .
+                        </tr>
+                        <tr>
+                            <p>contoh:<i>...Teks...</i></p>
+                        </tr>
+                        <hr>
+                    </table>
+                    <table border="0" cellpadding="1" cellspacing="150" width="%">
+                        <tr>
+                            <p>Mengecilkan Huruf / Small <br>
+                                Small digunakan untuk mengecilkan suatu teks agar tampak berbeda dengan teks lainnya. Penulisannya adalah small.
+                        </tr>
+                        <tr>
+                            <p>contoh:<small>...Teks...</small></p>
+                        </tr>
+                    </table>
+        
+                <td align="cente valign="top" width="100%" class="templateColumnContainer">
+                    <table border="0" cellpadding="1" cellspacing="150" width="%">
+                        <tr>
+                            <p>Membesarkan Huruf / Big <br>
+                                Big digunakan untuk membesarkan huruf sehingga tampak berbeda dengan teks lainnya. Penulisannya adalah Big.
+                        </tr>
+                        <tr>
+                            <p>contoh:<big>...Teks...</big></p>
+                        </tr>
+                        <hr>
+                        <tr>
+                            <p>Mencoret Teks dengan Strike <br>
+                                Untuk mencoret sebuah teks dalam html kita dapat menggunakan tag strike, sehingga menghasilkan teks yang dicoret ditengahnya. Cara penulisannya adalah strike.
+                        </tr>
+                        <tr>
+                            <p>contoh:<strike>...Teks...</strike></p>
+                        </tr>              
+                        </table>
+</body>
+</html>
